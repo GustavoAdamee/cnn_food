@@ -117,24 +117,43 @@ Este script irá:
 
 2. **Modelo Básico**:
    ```bash
-   jupyter notebook notebooks/part_1_basic_model.ipynb
+   jupyter notebook notebooks/basic_model.ipynb
    ```
    - Implementa uma CNN simples
    - Serve como baseline para comparação
 
 3. **Modelo Aprimorado**:
    ```bash
-   jupyter notebook notebooks/part_2_enhanced_model.ipynb
+   jupyter notebook notebooks/enhanced_model.ipynb
    ```
    - Versão melhorada com técnicas avançadas
    - Inclui regularização e otimizações
 
-4. **Comparação de Modelos**:
+4. **Report dos Modelos**:
    ```bash
-   jupyter notebook notebooks/part_3_models_comparison.ipynb
+   jupyter notebook notebooks/model_report_generator.ipynb
+   ```
+   - Gera um report do modelo selecionado
+   - Gera uma matriz de confusão do modelo
+
+5. **Feature Map dos Modelos**:
+   ```bash
+   jupyter notebook notebooks/feature_map_viewer.ipynb
+   ```
+   - Gera o feature map do modelo selecionado para uma imagem aleatória
+
+6. **Comparação de Modelos**:
+   ```bash
+   jupyter notebook notebooks/models_comparison.ipynb
    ```
    - Compara os diferentes modelos
    - Análise de performance detalhada
+
+7. **Demonstração prática dos modelos**:
+   ```bash
+   jupyter notebook notebooks/demonstration.ipynb
+   ```
+   - Faz a demonstração dos modelos para imagens em "test_images"
 
 ## 📊 Métricas de Avaliação
 
@@ -148,10 +167,14 @@ Os modelos são avaliados usando:
 ## 📈 Resultados Esperados
 
 Com o modelo básico, espera-se:
-- Acurácia de validação: ~96-97%
+- Acurácia de validação: ~50%
 - Convergência em aproximadamente 15-20 épocas
-- Boa generalização para a maioria das classes
+- Baixa generalização das classes
 
+Com o modelo otimizado, espera-se:
+- Acurácia de validação: ~98%
+- Convergência em aproximadamente 35 épocas (EarlyStopping atuando aqui)
+- Boa generalização das classes
 
 ## 📋 Dependências Principais
 
